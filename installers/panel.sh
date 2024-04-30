@@ -378,8 +378,8 @@ configure_nginx() {
   case "$OS" in
   ubuntu | debian)
     PHP_SOCKET="/run/php/php8.1-fpm.sock"
-    CONFIG_PATH_AVAIL="/etc/nginx/sites-available"
-    CONFIG_PATH_ENABL="/etc/nginx/sites-enabled"
+    CONFIG_PATH_AVAIL="/etc/nginx/conf.d"
+    CONFIG_PATH_ENABL="/etc/nginx/conf.d"
     ;;
   rocky | almalinux)
     PHP_SOCKET="/var/run/php-fpm/pterodactyl.sock"
